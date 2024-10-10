@@ -8,12 +8,34 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/resultText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:text="TextView"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.467" />
 
+    <EditText
+        android:id="@+id/inputText"
+        android:layout_width="231dp"
+        android:layout_height="66dp"
+        android:ems="10"
+        android:hint="Введите строку"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/resultText" />
+
+    <Button
+        android:id="@+id/countButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Подсчитать"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputText" />
 </androidx.constraintlayout.widget.ConstraintLayout>
